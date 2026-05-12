@@ -1,0 +1,245 @@
+1. What is JSX in React?
+JSX stands for JavaScript XML. It allows us to write HTML-like syntax directly in JavaScript, making UI code more readable and expressive.
+
+
+2. What's the difference between Functional and Class Components?
+Functional components are simpler and use hooks for state and lifecycle. Class components use `this` and lifecycle methods like `componentDidMount`.
+
+
+3. What are props in React?
+Props are inputs to components. They allow data to flow from parent to child and help make components reusable and dynamic.
+
+
+4. How does state differ from props?
+State is internal and mutable, managed within the component. Props are external and immutable, passed from parent components.
+
+
+5. What is the Virtual DOM?
+The Virtual DOM is a lightweight copy of the real DOM. React uses it to efficiently update only the parts of the UI that change.
+
+
+6. What are lifecycle methods in class components?
+Lifecycle methods like `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` let us hook into different stages of a component’s life.
+
+
+7. What is useState hook used for?
+`useState` lets us add state to functional components. It returns a state variable and a setter function to update it.
+
+
+8. How does useEffect work?
+`useEffect` runs side effects like API calls or subscriptions. It can run on mount, update, or cleanup based on dependencies.
+
+
+9. What is useContext used for?
+`useContext` allows components to access global data from a Context Provider without prop drilling.
+
+
+10. How does useReducer differ from useState?
+`useReducer` is better for complex state logic. It uses a reducer function and action dispatching, similar to Redux.
+
+
+11. What is the Context API?
+Context API provides a way to share values like theme or user data across components without passing props manually.
+
+
+12. How do you handle events in React?
+React uses synthetic events. We attach handlers like `onClick` or `onChange` directly to JSX elements.
+
+
+13. What is conditional rendering?
+Conditional rendering lets us show or hide components based on logic, using ternary operators or logical && expressions.
+
+
+14. How do you render lists in React?
+We use `.map()` to loop through arrays and render components. Each item should have a unique `key` prop.
+
+
+15. What are controlled components in forms?
+Controlled components have their input values tied to React state. We update state on every change to keep inputs in sync.
+
+
+16. What is React Router used for?
+React Router enables navigation between views in a single-page app. It uses components like `BrowserRouter`, `Route`, and `Link`.
+
+
+17. How do you fetch data in React?
+We use `fetch` or libraries like Axios inside `useEffect` to make API calls and update state with the response.
+
+
+18. What is Redux?
+Redux is a state management library that uses a central store, actions, and reducers to manage application state.
+
+
+19. How does Redux differ from Context API?
+Redux is more powerful for large apps with complex state. Context API is simpler and better for small-scale global state.
+
+
+20. What is Axios and why use it?
+Axios is a promise-based HTTP client. It simplifies API requests, handles errors gracefully, and supports interceptors.  
+
+
+21. How does React handle reconciliation?
+React compares the new Virtual DOM with the previous one using a diffing algorithm. It updates only the changed nodes, improving performance.
+
+
+22. What are Higher-Order Components (HOCs)?
+HOCs are functions that take a component and return a new component. They’re used for reusing logic across multiple components.
+
+
+23. What is memoization in React?
+Memoization avoids unnecessary re-renders by caching results. React provides `React.memo` and `useMemo` for optimizing performance.
+
+
+24. How does React optimize rendering with keys?
+Keys help React identify which items changed, added, or removed. They improve list rendering performance and prevent unnecessary DOM updates.
+
+
+25. What is the role of `useCallback`?
+`useCallback` memoizes functions so they don’t get recreated on every render. It’s useful when passing callbacks to child components.
+
+
+26. How does `useMemo` differ from `useCallback`?
+`useMemo` memoizes the result of a computation, while `useCallback` memoizes the function itself. Both help optimize performance.
+
+
+27. What are render props?
+Render props are a pattern where a component’s child is a function. It allows sharing logic between components using function-as-child.
+
+
+28. How does React handle error boundaries?
+Error boundaries catch JavaScript errors in child components during rendering. They use `componentDidCatch` and `getDerivedStateFromError`.
+
+
+29. What is lazy loading in React?
+Lazy loading defers component loading until needed. React’s `React.lazy` and `Suspense` help split code and improve initial load time.
+
+
+30. How does React Suspense work?
+Suspense lets components wait for something before rendering. It’s commonly used with `React.lazy` and data fetching libraries.
+
+
+31. What is server-side rendering (SSR) in React?
+SSR renders React components on the server and sends HTML to the client. It improves SEO and initial load performance.
+
+
+32. What is hydration in React?
+Hydration is the process of attaching event listeners to server-rendered HTML. It enables React to take over the static markup.
+
+
+33. How does `useImperativeHandle` work?
+`useImperativeHandle` customizes the instance value exposed to parent components via `ref`. It’s useful for exposing imperative methods.
+
+
+34. What is the difference between controlled and uncontrolled components?
+Controlled components are tied to React state. Uncontrolled components use refs and manage their own state internally.
+
+
+35. How does Redux middleware work?
+Redux middleware intercepts actions before they reach the reducer. It’s used for logging, async operations, and side effects.
+
+
+36. What is thunk in Redux?
+Thunk is a middleware that lets you write async logic inside action creators. It delays dispatching actions until the async task completes.
+
+
+37. How does Redux Toolkit simplify Redux?
+Redux Toolkit abstracts boilerplate by providing utilities like `createSlice`, `configureStore`, and built-in thunk support.
+
+
+38. What is the difference between `useEffect` and `useLayoutEffect`?
+`useEffect` runs after paint, while `useLayoutEffect` runs synchronously before paint. Use the latter for layout measurements or DOM mutations.
+
+
+39. How do you handle performance bottlenecks in React?
+Use memoization (`useMemo`, `React.memo`), avoid unnecessary re-renders, split code with lazy loading, and profile with React DevTools.
+
+
+40. What are custom hooks and why use them?
+Custom hooks encapsulate reusable logic in functions starting with `use`. They promote cleaner code and separation of concerns.a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. what is React? why to use?
+2. how to create react app using two ways
+by using create-react-app and vite
+ 
+3. what is SPA, what are key features of SPA?
+ 
+4. what is virtual DOM.explain with example
+ 
+5.what is component in react? how many types of component? how to create class component and functional component
+ 
+6. what is jsx?
+7. what do you mean render?
+8. what are difference between class component and functional component?
+ 
+9. what are life cycle method incase of class component and how life cycle can be managed incase functional component
+ 
+10. what do you mean hook method?
+ 
+11. explain props in react with example
+ 
+how to send function, object, any other data
+ 
+12. explain about state in react?
+13. how to manage state using class component and functional component
+14. useState(), useEffect(), useRef(), useMemo()
+ 
+15. what do you mean by context, how to create context and how to provide data or object using content
+ 
+explain the use of useContext()
+ 
+16. what is routing in react? how it works?
+ 
+17. how to insatll router?
+ 
+18. explain about BrowserRouter, Routes, Route, Link
+ 
+difference bwteen link to href
+ 
+19.how to define multiple router using routes
+20. how to navigate using useNavigte()
+ 
+21. how to fetch parameter value from url using useParams()
+ 
+22. what is axios?
+ 
+23. what are difference between fetch APi and axios
+ 
+25. explain steps to use axios?
+ 
+26. what is intercepter in react?
+ 
+27. explain axios with example
+ 
+28. integrate spring boot with react and access using axios
+ 
+29. useCallback(), useReducer()
+ 
+30. what are difference between useMemo() and useeffect()
+ 
+31. what are difference between useCallback() and useMemo()
+ 
+32. how to handle error in react?
+33. how to handle events in react? and how to get data from event
+ 
+34. what is redux? how to implement redux using react
+ 
+35. what is custom hook and how to create own custom hooks
